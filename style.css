@@ -101,6 +101,7 @@ nav ul li a:hover::before{
     transform: skew(-12deg) translateX(-50%);
     background: rgba(240,224,242,0.5);
     z-index: 0;
+    
 }
 */ 
 nav ul li a:hover::before{
