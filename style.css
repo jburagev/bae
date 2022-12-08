@@ -111,7 +111,7 @@ background:rgb(0, 0, 0);
 width:10px;
 height:10px;
 border-radius:100%;
-left:calc(51% - 9px);
+left:calc(51%);
 }
 
 /* Hero section */
@@ -241,14 +241,14 @@ left:calc(51% - 9px);
 .projects-section .project-card .info .info-title h4{
     font-weight: 700;
     /* font-size: 26px; */
-    font-size: 1.60vw;
+    font-size: 1.40vw;
     margin-top:0;
 }
 
 .projects-section .project-card .info .info-desc p{
     font-weight: 400;
     /* font-size: 22px; */
-    font-size: 1.40vw;
+    font-size: 1.15vw;
 }
 
 .projects-section{
