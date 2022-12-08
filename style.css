@@ -45,6 +45,44 @@ html {
     background-color: var(--button-color);
 }
 
+.orb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* min-height: 1200px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -17vh;
+    z-index: -1;
+}
+
+.intro-canvas{
+    overflow: hidden;
+    width: 100vw;
+    /* height: 180vh; */
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    will-change: transform;
+}
+
+.intro-overlay{
+        overflow: hidden;
+    /* width: 35vw; */
+    /* height: 35vw; */
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    z-index: 2;
+    top: 29vh;
+    left: 50%;
+    border-radius: 50%;
+    background: #f6f8fa;
+    transform: translateX(-50%);
+}
 /* Header */
 
 nav{
@@ -101,7 +139,7 @@ nav ul li a:hover::before{
     transform: skew(-12deg) translateX(-50%);
     background: rgba(240,224,242,0.5);
     z-index: 0;
-    
+
 }
 */ 
 nav ul li a:hover::before{
