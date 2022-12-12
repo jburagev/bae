@@ -55,18 +55,19 @@ html {
     top: 0;
     left: 0;
     margin-top: -17vh;
-    z-index: -1;
+    z-index: -2;
 }
 
 .intro-canvas{
     overflow: hidden;
     width: 100vw;
-    /* height: 180vh; */
-
+   /* height: 180vh; */
+    top:120px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     will-change: transform;
+    
 }
 
 .intro-overlay{
@@ -76,12 +77,15 @@ html {
     width: 20vw;
     height: 20vw;
     position: absolute;
-    z-index: 2;
-    top: 29vh;
+  
+
     left: 50%;
     border-radius: 50%;
     background: #f6f8fa;
     transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.92;
+
 }
 /* Header */
 
