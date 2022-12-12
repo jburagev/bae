@@ -334,9 +334,20 @@ left:calc(51%);
 }
 
 .aboutme-section .left img{
-    width:100%;
+    width: 100%;
 }
 
+/*
+.aboutme-section .left {
+    width:100%;
+    background: url("./images/firstpage/about-me.png") no-repeat;
+}
+
+.aboutme-section .left:hover {
+    background: url("./images/firstpage/about-me-hover.png") no-repeat;
+    width:100%;
+}
+*/
 
 
 .aboutme-section .right .info{
@@ -355,10 +366,48 @@ left:calc(51%);
     font-size: 1.15vw;
 }
 
+
+.projects-navigation{
+    display:flex;
+    margin-top:80px;
+    border-top:1px solid;
+    gap:25%;
+}
+
+.projects-navigation .left{
+    width:37.5%;
+    display: flex;
+}
+
+
+
+.projects-navigation .right{
+    width:37.5%;
+    display: flex;
+    margin-top:68px;
+}
+
+.projects-navigation .right .next-project{
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: 54px;
+    text-transform: uppercase;
+    
+}
+
+.projects-navigation .right .next-icon{
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin-left:15px;
+    
+}
+
 /* Footer */
 
 footer{
-    margin-top:100px;
+    margin-top:65px;
 }
 
 footer ul{
