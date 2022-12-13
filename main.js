@@ -15,6 +15,7 @@ var canvasProps = {
 };
 
 var orbWidth = document.querySelector('.intro-overlay').offsetWidth + 200;
+
 console.log(orbWidth);
 
 // if(!mobile) {
