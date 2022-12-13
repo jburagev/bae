@@ -1,3 +1,4 @@
+
 "use strict";
 
 var mobile = window.innerWidth <= 543;
@@ -14,12 +15,16 @@ var canvasProps = {
   stop: false
 };
 
+<<<<<<< HEAD
 var orbWidth = document.querySelector('.intro-overlay').offsetWidth + 200;
 
 console.log(orbWidth);
+=======
+var orbWidth = document.querySelector('.intro-overlay').offsetWidth + 150;
+console.log(document.querySelector('.hero-section').offsetHeight);
+>>>>>>> 100c0a930bec04eab1dd5ab9e6126de2c52877af
 
-// if(!mobile) {
-  // orbWidth *= window.devicePixelRatio;
+// if(!mobile) {  // orbWidth *= window.devicePixelRatio;
 // }
 
 // console.log(orbWidth);
@@ -58,7 +63,7 @@ var canvasObjects = [
     scaleX: 1,
     scaleY: 1,
     distance: 20,
-    radius: mobile ? orbWidth + 50 : orbWidth - 150,
+    radius: mobile ? orbWidth + 50 : orbWidth - 100,
     colorStart: 'rgb(255, 0, 45)',
     colorStop: 'rgb(255, 0, 45)',
     delayed: true
@@ -80,7 +85,7 @@ var canvasObjects = [
     scaleX: 1,
     scaleY: 1,
     distance: 20,
-    radius: mobile ? orbWidth + 50 : orbWidth - 120,
+    radius: mobile ? orbWidth + 50 : orbWidth - 100,
     colorStart: 'rgb(255, 0, 45)',
     colorStop: 'rgb(255, 92, 0)',
     delayed: true
@@ -286,10 +291,10 @@ class Orb {
   resize() {
     if(this.renderer && this.composer && this.camera) {
       // this.renderer.setPixelRatio( window.devicePixelRatio );
-      this.renderer.setSize( window.innerWidth, window.innerHeight, false );
-      this.composer.setSize( window.innerWidth, window.innerHeight, false );
+      this.renderer.setSize( window.innerWidth, document.querySelector('.hero-section').offsetHeight, false );
+      this.composer.setSize( window.innerWidth, document.querySelector('.hero-section').offsetHeight, false );
       
-      this.camera.aspect = window.innerWidth / window.innerHeight;
+      this.camera.aspect = window.innerWidth / document.querySelector('.hero-section').offsetHeight;
       this.camera.updateProjectionMatrix();
     }
   }
@@ -320,11 +325,5 @@ orb.initialize();
 })();
 
 
-
-function checkVisible(elm) {
-  var rect = elm.getBoundingClientRect();
-  var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-  return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
-}
 
 
