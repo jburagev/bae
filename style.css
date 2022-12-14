@@ -20,6 +20,12 @@ html {
     scroll-behavior: smooth;
 }
 
+a:hover{
+    text-decoration: none;
+    color:#232323;
+    opacity: 0.7;
+}
+
 .wrapper{
     /* max-width: 1240px; */
     margin:0 auto;
@@ -43,6 +49,12 @@ html {
 
 .btn.dark{
     background-color: var(--button-color);
+}
+
+.btn.dark:hover{
+    text-decoration: none;
+    color:#fff;
+    opacity: 0.9;
 }
 
 .orb{
@@ -149,12 +161,12 @@ nav ul li a:hover::before{
 nav ul li a:hover::before{
 content:"";
 position:absolute;
-top:35px;
 background:rgb(0, 0, 0);
-width:10px;
-height:10px;
+width:0.4vw;
+height:0.4vw;
 border-radius:100%;
 left:calc(51%);
+top:calc(100%);
 }
 
 /* Hero section */
@@ -374,9 +386,19 @@ left:calc(51%);
     gap:25%;
 }
 
+.projects-navigation a{
+    text-decoration: none;
+    color:#232323;
+}
+
+
+
 .projects-navigation .left{
     width:37.5%;
     display: flex;
+    margin-top:68px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -385,6 +407,8 @@ left:calc(51%);
     width:37.5%;
     display: flex;
     margin-top:68px;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects-navigation .right .next-project{
@@ -401,6 +425,23 @@ left:calc(51%);
     line-height: 54px;
     text-transform: uppercase;
     margin-left:15px;
+    
+}
+
+.projects-navigation .left .previous-project{
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: 54px;
+    text-transform: uppercase;
+    
+}
+
+.projects-navigation .left .previous-icon{
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin-right:15px;
     
 }
 
@@ -450,9 +491,13 @@ footer .contacts ul li{
     
 }
 
+footer .contacts ul li img{
+    width:10%;
+    
+}
+
 
 footer .contacts ul li span{
-    padding-bottom:4px;
     margin-left:16px;
     
 }
@@ -466,6 +511,10 @@ footer .links-container{
 
 .footer-wrap{
     border-top:2px solid;
+}
+
+footer .find-me img{
+    width:20%;
 }
 
 
@@ -563,4 +612,57 @@ footer .links-container{
 .project-section .third {
     margin-top:60px;
 
+}
+
+/* Contact me */
+
+.contact-me{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top:140px;
+}
+
+.contact-me .form h1{
+    margin-bottom: 51px;
+}
+
+.contact-me .form label{
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom:14px;
+}
+
+.contact-me .form input{
+    padding: 23px 757px 23px 20px;
+    gap: 10px;
+
+    width: 100%;
+    height: 68px;
+
+    background: #FEFEFE;
+    border: 1px solid #FADBFF;
+    border-radius: 16px;
+}
+
+.contact-me .form textarea{
+    align-items: flex-start;
+    padding: 23px 601px 255px 20px;
+    gap: 10px;
+    
+    width: 100%;
+    height: 300px;
+    
+    background: #FEFEFE;
+    border: 1px solid #FADBFF;
+    border-radius: 16px;
+}
+
+.contact-me .form{
+    text-align: center;
+}
+
+
+.contact-me .control{
+    text-align: initial;
 }
