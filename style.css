@@ -10,7 +10,7 @@
 }
 
 body{
-
+    /* animation: 1s ease-out 0s 1 slideInFromLeft; */
     margin:0;
     font-family: "Palatino Linotype";
     color:#232323;
@@ -55,6 +55,7 @@ a:hover{
     text-decoration: none;
     color:#fff;
     opacity: 0.9;
+
 }
 
 .orb{
@@ -315,6 +316,10 @@ top:calc(100%);
     margin-top:50px;
 }
 
+.project-card a:hover{
+    opacity: 1;
+}
+
 .project-card .img-hover-zoom{
     overflow: hidden; 
     height: 100%;
@@ -347,6 +352,7 @@ top:calc(100%);
 
 .aboutme-section .left img{
     width: 100%;
+    cursor: url(./images/hearth.svg), auto;
 }
 
 /*
@@ -492,7 +498,7 @@ footer .contacts ul li{
 }
 
 footer .contacts ul li img{
-    width:10%;
+    width:8%;
     
 }
 
@@ -620,17 +626,20 @@ footer .find-me img{
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top:140px;
+    margin-top:110px;
 }
 
 .contact-me .form h1{
     margin-bottom: 51px;
 }
 
+.contact-me .form .control{
+    margin-top:24px;
+}
+
 .contact-me .form label{
     font-weight: 400;
     font-size: 26px;
-    margin-bottom:14px;
 }
 
 .contact-me .form input{
@@ -643,19 +652,27 @@ footer .find-me img{
     background: #FEFEFE;
     border: 1px solid #FADBFF;
     border-radius: 16px;
+    margin-top:14px;
+    font-size: 0.9vw;
+    font-family: "Palatino Linotype";
 }
 
 .contact-me .form textarea{
     align-items: flex-start;
-    padding: 23px 601px 255px 20px;
+    padding: 23px 0px 0px 20px;
     gap: 10px;
-    
+    min-height: 200px;
+
     width: 100%;
-    height: 300px;
-    
+
     background: #FEFEFE;
     border: 1px solid #FADBFF;
     border-radius: 16px;
+    margin-top:14px;
+    font-size: 0.9vw;
+    font-family: "Palatino Linotype";
+    resize: vertical;
+
 }
 
 .contact-me .form{
@@ -666,3 +683,20 @@ footer .find-me img{
 .contact-me .control{
     text-align: initial;
 }
+
+.contact-me .form .btn{
+    margin-top:46px;
+}
+
+/*
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  */
