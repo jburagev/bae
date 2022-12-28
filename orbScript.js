@@ -1,3 +1,4 @@
+
 "use strict";
 
 var mobile = window.innerWidth <= 543;
@@ -16,7 +17,6 @@ var canvasProps = {
 
 var orbWidth = document.querySelector('.intro-overlay').offsetWidth + 150;
 console.log(document.querySelector('.hero-section').offsetHeight);
-
 
 // if(!mobile) {  // orbWidth *= window.devicePixelRatio;
 // }
@@ -321,5 +321,3 @@ orb.initialize();
 
 
 
-=======
->>>>>>> 3c81f1f97d095abb4e20fef7ec4888f773e2861a
