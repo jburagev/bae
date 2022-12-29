@@ -14,7 +14,7 @@ var canvasProps = {
   stop: false
 };
 
-var orbWidth = document.querySelector('.intro-overlay').offsetWidth + 150;
+var orbWidth = document.querySelector('.intro-overlay').offsetWidth + 0;
 console.log(document.querySelector('.hero-section').offsetHeight);
 
 
