@@ -113,6 +113,7 @@ class Orb {
   initialize() {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, .1, 1000);
+    //this.camera = new THREE.PerspectiveCamera(75, document.querySelector('.hero-section').offsetWidth / document.querySelector('.hero-section').offsetWidth, .1, 1000);
     this.camera.position.z = 1000;
     this.scene.add(this.camera);
 

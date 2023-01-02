@@ -43,7 +43,7 @@ a:hover{
     display: inline-block;
     font-weight: 400;
     /* font-size: 22px; */
-    font-size: 1.4vw;
+    font-size: 1.10vw;
     text-decoration: none;
 }
 
@@ -117,7 +117,7 @@ nav{
 nav .logo a{
     font-weight: 400;
     /* font-size: 26px; */
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     color: #232323;
     font-family: 'Palatino Linotype';
     text-decoration: none;
@@ -137,7 +137,7 @@ nav ul li a{
     font-style: normal;
     font-weight: 400;
     /* font-size: 26px; */
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     color: #232323;
     text-decoration: none;
     position: relative;
@@ -188,7 +188,7 @@ top:calc(100%);
 
 .hero-section .center{
     text-align: center;
-    padding:50px 0 50px 0;
+    padding:10px 0 10px 0;
     z-index: 1;
     
 }
@@ -198,7 +198,7 @@ top:calc(100%);
     font-style: normal;
     font-weight: 400;
     /* font-size: 64px; */
-    font-size: 3vw; 
+    font-size: 3.8vw; 
     text-align: center;
     text-transform: uppercase;
     margin: 0;
@@ -211,7 +211,7 @@ top:calc(100%);
     font-style: normal;
     font-weight: 400;
     /* font-size: 18px; */
-    font-size: 1.4vw;
+    font-size: 1.10vw;
     text-align: center;
     padding-top:6px;
     margin: 0;
@@ -264,7 +264,7 @@ top:calc(100%);
 
 .section-header{
     width: 100%;
-    margin-top:35px;
+    margin-top:50px;
     white-space: nowrap;
     overflow-x: auto;
 
@@ -273,7 +273,7 @@ top:calc(100%);
 .section-header hr{
     width: 60px;
     display: inline-block;
-    border-top: 1px solid #000000;
+    border-top: 2px solid #000000;
 }
 
 .section-header p{
@@ -282,7 +282,7 @@ top:calc(100%);
     font-style: normal;
     font-weight: 400;
     /* font-size: 26px; */
-    font-size: 2.2vw;
+    font-size: 1.4vw;
     margin-left:18px;
     margin-bottom: 0;
     margin-top: 0;
@@ -297,19 +297,19 @@ top:calc(100%);
 .projects-section .project-card .info .info-title h4{
     font-weight: 700;
     /* font-size: 26px; */
-    font-size: 1.8vw;
+    font-size: 1.40vw;
     margin-top:0;
 }
 
 .projects-section .project-card .info .info-desc p{
     font-weight: 400;
     /* font-size: 22px; */
-    font-size: 1.4vw;
+    font-size: 1.15vw;
 }
 
 .projects-section{
     display: flex;
-    gap:70px;
+    gap:90px;
 }
 
 .project-card{
@@ -341,7 +341,7 @@ top:calc(100%);
 .aboutme-section{
     display: flex;
     gap:90px;
-    margin-top:20px;
+    margin-top:50px;
 }
 
 .aboutme-section .left{
@@ -381,7 +381,7 @@ top:calc(100%);
 .aboutme-section .right .info .info-desc p{
     font-weight: 400;
     /* font-size: 22px; */
-    font-size: 1.4vw;
+    font-size: 1.15vw;
 }
 
 
@@ -454,12 +454,13 @@ top:calc(100%);
 /* Footer */
 
 footer{
-    margin-top:40px;
+    margin-top:65px;
 }
 
 footer ul{
     list-style:none;
     padding-left: 0px;
+    margin:0;
 }
 
 footer ul li{
@@ -472,14 +473,14 @@ footer ul li a{
     color: #232323;
     font-weight: 400;
    /* font-size: 20px; */
-    font-size: 1.4vw;
+    font-size: 1.15vw;
     
 }
 
 footer h3{
     font-weight: 700;
     /* font-size: 20px; */
-    font-size: 1.4vw;
+    font-size: 1.15vw;
 }
 
 footer ul li{
@@ -487,7 +488,7 @@ footer ul li{
     color: #232323;
     font-weight: 400;
     /* font-size: 20px; */
-    font-size: 1.4vw;
+    font-size: 1.15vw;
     
 }
 
@@ -511,8 +512,8 @@ footer .contacts ul li span{
 footer .links-container{
     display:grid;
     grid-template-columns: 2fr 2fr 1fr;
-    margin-right: min(10%);
-    margin-left: min(10%);
+    margin-right: min(15%);
+    margin-left: min(15%);
 }
 
 .footer-wrap{
