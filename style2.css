@@ -41,21 +41,15 @@ a:hover{
 @media only screen and (max-width: 480px) {
 
     .btn{
-        padding: 14px 20px;
+        padding: 10px 20px;
         font-size: 16px;
         border-radius: 18px;
         width: 128px;
-        height: 46px;
-       
-        gap:10px;
-        margin-top:46px;
+        height: 38px;
     }
-    .btn.dark{
-        background-color: #FF9E5C;
-        color:black;
-        height: 46px;
-        font-style: normal;
-        font-weight: 400;
+    .wrapper{
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .nav-items-web{
         display: none;
@@ -63,14 +57,72 @@ a:hover{
     .nav-items-mobile{
         display: flex;
     }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .btn{
+        padding: 14px 18px;
+        font-size: 18px;
+        border-radius: 22px;
+        
+    }
     .wrapper{
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: min(15%);
+        margin-left: min(15%);
+    }
+    .nav-items-web{
+        display: flex;
+    }
+    .nav-items-mobile{
+        display: none;
     }
 }
 
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .btn{
+        padding: 14px 20px;
+        font-size: 20px;
+        border-radius: 22px;
+        
+    }
+    .wrapper{
+        margin-right: min(15%);
+        margin-left: min(15%);
+    }
+    .nav-items-web{
+        display: flex;
+    }
+    .nav-items-mobile{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+    .btn{
+        padding: 14px 22px;
+        font-size: 22px;
+        border-radius: 22px;
+        
+    }
+    .wrapper{
+        margin-right: min(15%);
+        margin-left: min(15%);
+    }
+    .nav-items-web{
+        display: flex;
+    }
+    .nav-items-mobile{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1401px) {
 
     .btn{
         padding: 14px 22px;
@@ -78,12 +130,9 @@ a:hover{
         border-radius: 22px;
         
     }
-    .btn.dark{
-        background-color: var(--button-color);
-    }
     .wrapper{
-        margin-right: 132px;
-        margin-left: 132px;
+        margin-right: min(15%);
+        margin-left: min(15%);
     }
     .nav-items-web{
         display: flex;
@@ -91,8 +140,8 @@ a:hover{
     .nav-items-mobile{
         display: none;
     }
-}
 
+}
 
 .btn{
     color:#fff;
@@ -104,7 +153,9 @@ a:hover{
 
 
 
-
+.btn.dark{
+    background-color: var(--button-color);
+}
 
 .btn.dark:hover{
     text-decoration: none;
@@ -135,7 +186,6 @@ a:hover{
     .orb{
         display:none;
     }
-    
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -234,7 +284,6 @@ a:hover{
     nav{
         margin-top:40px;
     } 
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -242,8 +291,13 @@ a:hover{
         top:24px;
     }
     nav{
-        margin-top:60px;
+        margin-top:40px;
     }
+    .intro-overlay{
+        width: 20vw;
+        height: 20vw;
+    }  
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -251,8 +305,12 @@ a:hover{
         top:48px;
     }
     nav{
-        margin-top:60px;
+        margin-top:50px;
     }
+    .intro-overlay{
+        width: 20vw;
+        height: 20vw;
+    }  
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
@@ -262,6 +320,11 @@ a:hover{
     nav{
         margin-top:60px;
     }
+    .intro-overlay{
+        width: 20vw;
+        height: 20vw;
+    }  
+
 }
 
 @media only screen and (min-width: 1401px) {
@@ -271,9 +334,12 @@ a:hover{
     nav{
         margin-top:60px;
     }
+    .intro-overlay{
+        width: 20vw;
+        height: 20vw;
+    }  
+ 
 }
-
-
 
 .intro-canvas{
     overflow: hidden;
@@ -303,6 +369,7 @@ a:hover{
     opacity: 0.8;
 
 }
+
 
 .intro-overlay{
     overflow: hidden;
@@ -334,10 +401,10 @@ nav{
 
 @media only screen and (max-width: 480px) {
     nav .logo a{
-        font-size: 16px;
+        font-size: 2.4vw;
     }
     nav ul li a{
-        font-size: 22px;
+        font-size: 2.4vw;
     }
     nav ul{
         gap: 15px;
@@ -346,22 +413,22 @@ nav{
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     nav .logo a{
-        font-size: 22px;
+        font-size: 2.2vw;
     }
     nav ul li a{
-        font-size: 22px;
+        font-size: 2.2vw;
     }
     nav ul{
         gap: 30px;
     }
-} 
+}
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     nav .logo a{
-        font-size: 22px;
+        font-size: 2vw;
     }
     nav ul li a{
-        font-size: 22px;
+        font-size: 2vw;
     }
     nav ul{
         gap: 45px;
@@ -370,11 +437,11 @@ nav{
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
     nav .logo a{
-        font-size: 22px;
+        font-size: 1.8vw;
     }
 
     nav ul li a{
-        font-size: 22px;
+        font-size: 1.8vw;
     }
     nav ul{
         gap: 60px;
@@ -383,11 +450,11 @@ nav{
 
 @media only screen and (min-width: 1401px) {
     nav .logo a{
-        font-size: 22px;
+        font-size: 1.4vw;
     }
 
     nav ul li a{
-        font-size: 22px;
+        font-size: 1.4vw;
     }
     nav ul{
         gap: 90px;
@@ -460,26 +527,24 @@ top:calc(100%);
     }
     .hero-section .center{
         padding:14.4px 0 14.4px 0;
-        margin-top: 50px;
     }
     .hero-section .center h1{
-        font-size: 22px; 
+        font-size: 4.6vw; 
     }
     .hero-section .center p{
-        font-size: 14px;
+        font-size: 2vw;
     }
     .section-header{
-        margin-top:80px;
+        margin-top:10px;
     }
-
     .section-header p{
-        font-size: 16px;
+        font-size: 2.2vw;
     }
     .hero-section .btn{
-        margin-top: 46px;
+        margin-top: 6px;
     }
     .section-header hr{
-        width: 60px;
+        width: 20px;
         border-top: 1px solid #000000;
     }
 }
@@ -494,16 +559,16 @@ top:calc(100%);
         padding:28.8px 0 28.8px 0;
     }
     .hero-section .center h1{
-        font-size: 64px; 
+        font-size: 4.4vw; 
     }
     .hero-section .center p{
-        font-size: 16px;
+        font-size: 2vw;
     }
     .section-header{
         margin-top:20px;
     }
     .section-header p{
-        font-size: 26px;
+        font-size: 2vw;
     }
     .hero-section .btn{
         margin-top: 12px;
@@ -523,17 +588,17 @@ top:calc(100%);
     .hero-section .center{
         padding:43.2px 0 43.2px 0;
     }
-    .hero-section .center h1{ 
-        font-size: 64px;  
+    .hero-section .center h1{
+        font-size: 4.2vw; 
     }
     .hero-section .center p{
-        font-size: 16px;
+        font-size: 1.50vw;
     }
     .section-header{
         margin-top:30px;
     }
     .section-header p{
-        font-size: 26px;
+        font-size: 1.8vw;
     }
     .hero-section .btn{
         margin-top: 18px;    
@@ -547,29 +612,28 @@ top:calc(100%);
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
     .hero-section{
         margin-top:50px;
-        background: radial-gradient(48.14% 277.22% at 48.91% 51.86%, #FFFFFF 0%, rgba(251, 238, 254, 0.0729167) 50%, rgba(213, 208, 217, 0.385417) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
         justify-content: space-between;
     }
     .hero-section .center{
         padding:57.6px 0 57.6px 0;
     }
     .hero-section .center h1{
-        font-size: 64px; 
+        font-size: 4vw; 
     }
     .hero-section .center p{
-        font-size: 16px;
+        font-size: 1.30vw;
     }
     .section-header{
         margin-top:40px;
     }
     .section-header p{
-        font-size: 26px;
+        font-size: 1.6vw;
     }
     .hero-section .btn{
         margin-top: 24px;
     }
     .section-header hr{
-        width: 60px;
+        width: 50px;
         border-top: 2px solid #000000;
     }
 }
@@ -577,23 +641,22 @@ top:calc(100%);
 @media only screen and (min-width: 1401px) {
     .hero-section{
         margin-top:50px;
-        background: radial-gradient(48.14% 277.22% at 48.91% 51.86%, #FFFFFF 0%, rgba(251, 238, 254, 0.0729167) 50%, rgba(213, 208, 217, 0.385417) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
         justify-content: space-between;
     }
     .hero-section .center{
         padding:72px 0 72px 0;
     }
     .hero-section .center h1{
-        font-size: 64px; 
+        font-size: 3.8vw; 
     }
     .hero-section .center p{
-        font-size: 16px;
+        font-size: 1.10vw;
     }
     .section-header{
         margin-top:50px;
     }
     .section-header p{
-        font-size: 26px;
+        font-size: 1.4vw;
     }
     .section-header hr{
         width: 60px;
@@ -606,12 +669,15 @@ top:calc(100%);
 
 .hero-section{
 
+    
     width:100%;
     align-items: center;
+    
     
     display: flex;
     flex-direction: column;
     position: relative;
+    /* background: radial-gradient(48.14% 277.22% at 48.91% 51.86%, #FFFFFF 0%, rgba(251, 238, 254, 0.0729167) 50%, rgba(213, 208, 217, 0.385417) 100%); */
     border-radius: 18px;
 
 }
@@ -721,37 +787,25 @@ top:calc(100%);
 
 @media only screen and (max-width: 480px) {
     .projects-section .project-card .info .info-title h4{
-        font-size: 16px;
-        margin-top:24px;
+        font-size: 2.2vw;
     }
     .projects-section .project-card .info .info-desc p{
-        font-size: 14px;
-        margin-top:10px;
-        margin-bottom: 36px;
+        font-size: 1.85vw;
     }
     .project-card{
         margin-top:10px;
     }
     .projects-section{
         gap:18px;
-        flex-wrap:wrap;
-        margin-top:30px;
-    }
-    .project-card-img-web{
-        display:none;
-    }
-    .project-card-img-mobile{
-        display:block;
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .projects-section .project-card .info .info-title h4{
-        font-size: 26px;
-    } 
+        font-size: 2vw;
+    }
     .projects-section .project-card .info .info-desc p{
-        font-size: 22px;
-        margin-bottom: 75px;
+        font-size: 1.65vw;
     }
     .project-card{
         margin-top:20px;
@@ -759,21 +813,14 @@ top:calc(100%);
     .projects-section{
         gap:36px;
     }
-    .project-card-img-web{
-        display:block;
-    }
-    .project-card-img-mobile{
-        display:none;
-    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .projects-section .project-card .info .info-title h4{
-        font-size: 26px;
-    } 
+        font-size: 1.80vw;
+    }
     .projects-section .project-card .info .info-desc p{
-        font-size: 22px;
-        margin-bottom: 75px;
+        font-size: 1.45vw;
     }
     .project-card{
         margin-top:30px;
@@ -781,21 +828,14 @@ top:calc(100%);
     .projects-section{
         gap:54px;
     }
-    .project-card-img-web{
-        display:block;
-    }
-    .project-card-img-mobile{
-        display:none;
-    }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
     .projects-section .project-card .info .info-title h4{
-        font-size: 26px;
-    } 
+        font-size: 1.60vw;
+    }
     .projects-section .project-card .info .info-desc p{
-        font-size: 22px;
-        margin-bottom: 75px;
+        font-size: 1.25vw;
     }
     .project-card{
         margin-top:40px;
@@ -803,33 +843,20 @@ top:calc(100%);
     .projects-section{
         gap:72px;
     }
-    .project-card-img-web{
-        display:block;
-    }
-    .project-card-img-mobile{
-        display:none;
-    }
 }
 
 @media only screen and (min-width: 1401px) {
     .projects-section .project-card .info .info-title h4{
-        font-size: 26px;
+        font-size: 1.40vw;
     } 
     .projects-section .project-card .info .info-desc p{
-        font-size: 22px;
-        margin-bottom: 75px;
+        font-size: 1.15vw;
     }
     .project-card{
         margin-top:50px;
     }
     .projects-section{
         gap:90px;
-    }
-    .project-card-img-web{
-        display:block;
-    }
-    .project-card-img-mobile{
-        display:none;
     }
 }
 
@@ -849,14 +876,20 @@ top:calc(100%);
 .projects-section .project-card .info .info-desc p{
     font-weight: 400;
     /* font-size: 22px; */
+    margin-bottom: 75px;
     margin-top: 18px;
-    
 }
 
 .projects-section .project-card:last-child .info .info-desc p{
     margin-bottom: 0px;
 }
 
+.projects-section .project-card .info .info-desc .last p{
+    font-weight: 400;
+    /* font-size: 22px; */
+    margin-bottom: 0px;
+    margin-top: 18px;
+}
 .projects-section{
     display: flex;
 }
@@ -887,20 +920,12 @@ top:calc(100%);
     .aboutme-section{
         gap:18px;
         margin-top:10px;
-        flex-wrap:wrap;
-        justify-content: center;
     }
-    .aboutme-section .left img{
-        margin-top:40px;
-    }
-
     .aboutme-section .right .info .info-title h4{
-        font-size: 16px;
-        margin-top:30px;
+        font-size: 2.2vw;
     }
     .aboutme-section .right .info .info-desc p{
-        font-size: 14px;
-        margin-top:22px;
+        font-size: 1.85vw;
     }
 }
 
@@ -910,10 +935,10 @@ top:calc(100%);
         margin-top:20px;
     }
     .aboutme-section .right .info .info-title h4{
-        font-size: 26px;
+        font-size: 2.2vw;
     }
     .aboutme-section .right .info .info-desc p{
-        font-size: 22px;
+        font-size: 1.65vw;
     }
 }
 
@@ -923,10 +948,10 @@ top:calc(100%);
         margin-top:30px;
     }
     .aboutme-section .right .info .info-title h4{
-        font-size: 26px;
+        font-size: 1.80vw;
     }
     .aboutme-section .right .info .info-desc p{
-        font-size: 22px;
+        font-size: 1.45vw;
     }
 }
 
@@ -936,10 +961,10 @@ top:calc(100%);
         margin-top:40px;
     }
     .aboutme-section .right .info .info-title h4{
-        font-size: 26px;
+        font-size: 1.60vw;
     }
     .aboutme-section .right .info .info-desc p{
-        font-size: 22px;
+        font-size: 1.25vw;
     }
 }
 
@@ -949,10 +974,10 @@ top:calc(100%);
         margin-top:50px;
     }
     .aboutme-section .right .info .info-title h4{
-        font-size: 26px;
+        font-size: 1.40vw;
     }
     .aboutme-section .right .info .info-desc p{
-        font-size: 22px;
+        font-size: 1.15vw;
     }
 }
 
@@ -1024,30 +1049,6 @@ top:calc(100%);
         margin-left:3.2px;
         
     }
-    .footer-mobile{
-        border-top:1px solid;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .footer-mobile .footer-content{
-        display:flex;
-        justify-content: space-between;
-        
-
-        margin-top:14px;
-        margin-bottom:24px;
-    }
-    .footer-web{
-        display:none;
-    }
-    .footer-mobile .go-top{
-        width:24px;
-        height:24px;
-    }
-    .footer-mobile .right{
-        display: flex;
-        align-items: center;
-    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -1058,13 +1059,13 @@ top:calc(100%);
         margin: 5.6px 0;
     }
     footer h3{
-        font-size: 20px;
-    }
-    footer .contacts ul li span{
-        font-size: 20px;
+        font-size: 1.65vw;
     }
     footer ul li a{
-        font-size: 20px;
+        font-size: 1.65vw;
+    }
+    footer .contacts ul li span{
+        font-size: 1.65vw;
     }
     footer .contacts ul li span{
         margin-left:6.4px;
@@ -1073,13 +1074,6 @@ top:calc(100%);
     footer .find-me img{
         width:30%;
     }
-    .footer-mobile{
-        display:none;
-    }
-    .footer-web{
-        display:block;
-    }
-
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1090,13 +1084,13 @@ top:calc(100%);
         margin: 8.4px 0;
     }
     footer h3{
-        font-size: 20px;
-    }
-    footer .contacts ul li span{
-        font-size: 20px;
+        font-size: 1.45vw;
     }
     footer ul li a{
-        font-size: 20px;
+        font-size: 1.45vw;
+    }
+    footer .contacts ul li span{
+        font-size: 1.45vw;
     }
     footer .contacts ul li span{
         margin-left:9.6px;
@@ -1104,12 +1098,6 @@ top:calc(100%);
     }
     footer .find-me img{
         width:25%;
-    }
-    .footer-mobile{
-        display:none;
-    }
-    .footer-web{
-        display:block;
     }
 }
 
@@ -1121,13 +1109,13 @@ top:calc(100%);
         margin: 11.2px 0;
     }
     footer h3{
-        font-size: 20px;
-    }
-    footer .contacts ul li span{
-        font-size: 20px;
+        font-size: 1.25vw;
     }
     footer ul li a{
-        font-size: 20px;
+        font-size: 1.25vw;
+    }
+    footer .contacts ul li span{
+        font-size: 1.25vw;
     }
     footer .contacts ul li span{
         margin-left:12.8px;
@@ -1135,12 +1123,6 @@ top:calc(100%);
     }
     footer .find-me img{
         width:20%;
-    }
-    .footer-mobile{
-        display:none;
-    }
-    .footer-web{
-        display:block;
     }
 }
 
@@ -1152,13 +1134,10 @@ top:calc(100%);
         margin: 14px 0;  
     }
     footer h3{
-        font-size: 20px;
+        font-size: 1.15vw;
     }
     footer .contacts ul li span{
-        font-size: 20px;
-    }
-    footer ul li a{
-        font-size: 20px;
+        font-size: 1.15vw;
     }
     footer .contacts ul li span{
         margin-left:16px;
@@ -1167,16 +1146,6 @@ top:calc(100%);
     footer .find-me img{
         width:15%;
     }
-    .footer-mobile{
-        display:none;
-    }
-    .footer-web{
-        display:block;
-    }
-    .footer-web{
-        display:block;
-    }
-
 }
 
 
@@ -1239,7 +1208,6 @@ footer .find-me{
 footer .find-me a{
     text-decoration: none;
 }
-
 
 
 /* Project page */
@@ -1359,7 +1327,7 @@ footer .find-me a{
 
 .projects-navigation .right .next-project{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 1.8vw;
     line-height: 54px;
     text-transform: uppercase;
     
@@ -1367,7 +1335,7 @@ footer .find-me a{
 
 .projects-navigation .right .next-icon{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 1.8vw;
     line-height: 54px;
     text-transform: uppercase;
     margin-left:15px;
@@ -1376,7 +1344,7 @@ footer .find-me a{
 
 .projects-navigation .left .previous-project{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 1.8vw;
     line-height: 54px;
     text-transform: uppercase;
     
@@ -1384,7 +1352,7 @@ footer .find-me a{
 
 .projects-navigation .left .previous-icon{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 1.8vw;
     line-height: 54px;
     text-transform: uppercase;
     margin-right:15px;
@@ -1459,17 +1427,17 @@ footer .find-me a{
     .project-section p{
         font-weight: 400;
         /* font-size: 22px; */
-        font-size: 22px;
+        font-size: 1.65vw;
     }
     .project-section h2{
         font-weight: 400;
         /* font-size: 28px; */
-        font-size: 28px;
+        font-size: 2vw;
     }
     .project-section h1{
         font-weight: 700;
         /*font-size: 40px;*/
-        font-size: 40px;
+        font-size: 2.2vw;
     }
     .project-section .first {
         display:flex;
@@ -1494,17 +1462,17 @@ footer .find-me a{
     .project-section p{
         font-weight: 400;
         /* font-size: 22px; */
-        font-size: 22px;
+        font-size: 1.45vw;
     }
     .project-section h2{
         font-weight: 400;
         /* font-size: 28px; */
-        font-size: 28px;
+        font-size: 1.80vw;
     }
     .project-section h1{
         font-weight: 700;
         /*font-size: 40px;*/
-        font-size: 40px;
+        font-size: 2vw;
     }
     .project-section .first {
         display:flex;
@@ -1528,17 +1496,17 @@ footer .find-me a{
     .project-section p{
         font-weight: 400;
         /* font-size: 22px; */
-        font-size: 22px;
+        font-size: 1.25vw;
     }
     .project-section h2{
         font-weight: 400;
         /* font-size: 28px; */
-        font-size: 28px;
+        font-size: 1.60vw;
     }
     .project-section h1{
         font-weight: 700;
         /*font-size: 40px;*/
-        font-size: 40px;
+        font-size: 1.80vw;
     }
     .project-section .first {
         display:flex;
@@ -1562,17 +1530,17 @@ footer .find-me a{
     .project-section p{
         font-weight: 400;
         /* font-size: 22px; */
-        font-size: 22px;
+        font-size: 1.15vw;
     }
     .project-section h2{
         font-weight: 400;
         /* font-size: 28px; */
-        font-size: 28px;
+        font-size: 1.40vw;
     }
     .project-section h1{
         font-weight: 700;
         /*font-size: 40px;*/
-        font-size: 40px;
+        font-size: 1.60vw;
     }
     .project-section .first {
         display:flex;
@@ -1594,12 +1562,7 @@ footer .find-me a{
 .project-section .first .left{
     padding-left:30px;
     border-left:2.5px solid;
-    /* max-height: 786px; */
-}
-
-.project-section .right {
-    width:50%;
-    
+    max-height: 786px;
 }
 
 .project-section .first .right {
@@ -1607,14 +1570,18 @@ footer .find-me a{
     align-items: center;
 }
 
-.project-section .left {
-    width:50%;
-    
-}
-
 .project-section .second .left{
     display: flex;
     align-items: center;
+}
+
+
+.project-section .right {
+    width:50%;
+}
+
+.project-section .left {
+    width:50%;
 }
 
 .project-section .left h1{

@@ -23,7 +23,7 @@
         <div class="wrapper">
             <nav>
                 <div class="logo"><a href="index.html">anastasia.design</a></div>
-                <ul>
+                <ul class="nav-items-web">
                     <li>
                         <a href="#projects">Work</a>
                     </li>
@@ -34,6 +34,7 @@
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
+                <img src = "./images/mobile/menu.png" class="nav-items-mobile" />
             </nav>
             <!-- End of navigation menu -->
 
@@ -45,6 +46,8 @@
                     
                 </div>
                 --> 
+                <img src="./images/firstpage/Colors (1).png" class="orb-mobile"/>
+                <div class="intro-overlay-mobile"></div>
                 <div class="center">
                     <div class="intro-overlay"></div>
                     <h1>I DESIGN USER EXPERIENCE* <br> FOR YOU.</h1>
@@ -67,14 +70,15 @@
 
     <div class="wrapper">
         <div class="section-header" id="projects">
-            <div class="hr"><hr></div><p>Projects</p>
+            <div class="hr"><hr></div><p>Work</p>
         </div>
         <section class="projects-section">
             <div class="left">
                 <div class="project-card">
                     <a href="./projects/sugarwish.html">
                         <div class="img-hover-zoom">
-                            <img src="./images/firstpage/projects/Sugarwish.png" alt="" />
+                            <img src="./images/firstpage/projects/Sugarwish.png" class="project-card-img-web" alt="" />
+                            <img src="./images/firstpage/projects/Sugarwish-mobile.png" class="project-card-img-mobile" alt="" />
                         </div>
                     </a>
                     <div class="info">
@@ -106,7 +110,9 @@
                 <div class="project-card">
                     <a href="">
                         <div class="img-hover-zoom">
-                            <img src="./images/firstpage/projects/Lpp.png" alt="" />
+                           
+                            <img src="./images/firstpage/projects/Lpp.png" class="project-card-img-web" alt="" />
+                            <img src="./images/firstpage/projects/Lpp-mobile.png" class="project-card-img-mobile" alt="" />
                         </div>       
                     </a>
                     <div class="info">
@@ -124,7 +130,8 @@
                 <div class="project-card">
                     <a href="">
                         <div class="img-hover-zoom">
-                            <img src="./images/firstpage/projects/BrainsterTalent.png" alt="" />
+                            <img src="./images/firstpage/projects/BrainsterTalent.png" class="project-card-img-web" alt="" />
+                            <img src="./images/firstpage/projects/BrainsterTalent-Mobile.png" class="project-card-img-mobile" alt="" />
                         </div>                  
                     </a>
                     <div class="info">
@@ -136,13 +143,13 @@
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="project-card">
                     <a href="">
                         <div class="img-hover-zoom">
                             <img src="./images/firstpage/projects/ShuMiBerovo.png" alt="" />
                         </div> 
                     </a>
-                    <!--
                     <div class="info">
                         <div class="info-title">
                             <h4>Shu-Mi Berovo</h4>
@@ -156,7 +163,8 @@
                 <div class="project-card">
                     <a href="">
                         <div class="img-hover-zoom">
-                            <img src="./images/firstpage/projects/Bak.png" alt="" />
+                            <img src="./images/firstpage/projects/Bak.png" class="project-card-img-web" alt="" />
+                            <img src="./images/firstpage/projects/Bak-mobile.png" class="project-card-img-mobile" alt="" />
                         </div>          
                     </a>
                     <div class="info">
@@ -180,12 +188,13 @@
         </div>
         <section class="aboutme-section">
             <div class="left">
-                <img src="./images/firstpage/about-me.png" onmouseover="this.src='./images/firstpage/about-me-hover.png'" onmouseout="this.src='./images/firstpage/about-me.png'" alt="" />
+                <img src="./images/firstpage/about-me.png" onmouseover="this.src='./images/firstpage/about-me-hover.png'" onmouseout="this.src='./images/firstpage/about-me.png'" class="project-card-img-web" alt="" />
+                <img src="./images/firstpage/about-me-mobile.png" class="project-card-img-mobile" alt="" />
             </div>
             <div class="right">
                 <div class="info">
                     <div class="info-title">
-                        <h4>Hey, I’m Anastasia!</h4>
+                        <span>Hey, I’m Anastasia!</span>
                     </div>
                     <div class="info-desc">
                         <p>I am a UX/UI designer on a journey. Excited about intelligent, truthful, and sustainable design projects. Always happy to work with people from different backgrounds and different fields. I worked on several projects till now and I love what I do.</p>
@@ -198,8 +207,15 @@
     </div>
 
     <!-- End of About me section -->
+    <footer class="footer-mobile">
+        <div class="footer-content">
+            <div class="left"><span>@ all rights reserved</span><br><span>2023 January</span></div>
+            <div class="right"><img src="./images/firstpage/footer/footer-top-mobile.png" class="go-top"/></div>
+        </div>
+        
+    </footer>
 
-    <footer>
+    <footer class="footer-web">
         <div class="wrapper footer-wrap">
             <div class="links-container">
                 <div class="links">
