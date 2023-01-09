@@ -10,14 +10,19 @@
 }
 
 @font-face {
-    font-family: myFont;
-    src: url(./font/Mulish-VariableFont_wght.ttf);
+    font-family: MulishFont;
+    src: url(./font/Mulish/Mulish-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: SoraFont;
+    src: url(./font/Sora/Sora-VariableFont_wght.ttf);
 }
 
 body{
     /* animation: 1s ease-out 0s 1 slideInFromLeft; */
     margin:0;
-    font-family: myFont;
+    font-family: MulishFont;
     color:#232323;
     font-size:16px;
     font-weight: 700;
@@ -246,8 +251,10 @@ a:hover{
         height: 125vw;
     }
     .intro-overlay-mobile{
-        width: 90vw;
-        height: 90vw;
+       /* width: 90vw;
+        height: 90vw; */
+        width: 382px;
+        height: 368px;
     }
     .intro-overlay-mobile{
         display:block;
@@ -460,7 +467,7 @@ a:hover{
     background: #f6f8fa;
     transform: translateX(-50%);
     z-index: -1;
-    opacity: 0.92;
+    opacity: 0.9;
 
 }
 /* Header */
@@ -593,12 +600,12 @@ nav ul li a:hover::before{
 nav ul li a:hover::before{
 content:"";
 position:absolute;
-background:rgb(0, 0, 0);
+background:#FADBFF;
 width:8px;
 height:8px;
 border-radius:100%;
 left:calc(51%);
-top:calc(100%);
+top:calc(120%);
 }
 
 /* Hero section */
@@ -792,7 +799,7 @@ top:calc(100%);
     font-style: normal;
     font-weight: 400;
     /* font-size: 64px; */
-    
+    font-family: SoraFont;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
@@ -1133,6 +1140,7 @@ top:calc(100%);
     }
 }
 
+
 .aboutme-section{
     display: flex;
     justify-content: center;
@@ -1142,6 +1150,10 @@ top:calc(100%);
    /* margin-left: 53.5px; */
     display:flex;
     align-items: center;
+}
+
+.aboutme-section .right .info .info-title span{
+    font-weight: 400;
 }
 
 .aboutme-section .left img{
@@ -1349,6 +1361,11 @@ top:calc(100%);
     }
 }
 
+footer .find-me img{
+    width:30px;
+    height:30px;
+}
+
 
 footer ul{
     list-style:none;
@@ -1402,7 +1419,8 @@ footer .links-container{
 }
 
 footer .find-me{
-    text-align: center;
+    margin-left:60px;
+
 }
 
 
@@ -1562,7 +1580,7 @@ footer .find-me a{
     display: flex;
 
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 
@@ -1571,7 +1589,7 @@ footer .find-me a{
     width:37.5%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 
 .projects-navigation .right .next-project{
@@ -1870,9 +1888,16 @@ footer .find-me a{
  
     margin-top: 119px;
 }
-
+.project-section h1{
+    font-family: SoraFont;
+}
 
 /* Contact me */
+
+.contact-me-w{
+    margin-left:270px;
+    margin-right:270px;
+}
 
 .contact-me{
 
@@ -1880,11 +1905,12 @@ footer .find-me a{
 }
 
 .contact-me .form h1{
-    margin-bottom: 51px;
+    margin-bottom: 50px;
+    font-size:32px;
 }
 
 .contact-me .form .control{
-    margin-top:24px;
+    margin-top:20px;
 }
 
 .contact-me .form label{
@@ -1904,7 +1930,7 @@ footer .find-me a{
     border-radius: 16px;
     margin-top:14px;
     font-size: 22px;
-    font-family: "Palatino Linotype";
+    font-family: MulishFont;
 }
 
 .contact-me .form textarea{
@@ -1920,7 +1946,7 @@ footer .find-me a{
     border-radius: 16px;
     margin-top:14px;
     font-size: 22px;
-    font-family: "Palatino Linotype";
+    font-family: MulishFont;
     resize: vertical;
 
 }
@@ -1935,10 +1961,14 @@ footer .find-me a{
 }
 
 .contact-me .form .btn{
-    margin-top:46px;
+    margin-top:50px;
+    margin-bottom: 30px;
     width: 162px;
     height: 59px;
+    background-color: #FF9E5C;
+    color:black;
 }
+
 
 /*
 
