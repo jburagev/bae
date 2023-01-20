@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>nastasya.space</title>
 
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" media="screen and (min-width: 1025px) and (max-width: 1200px)" href="style1025-1200.css">
     <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1024px)" href="style769-1024.css">
     <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" href="style481-768.css">
@@ -17,12 +17,29 @@
     <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1024px)" href="style769-1024.css">
     <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" href="style481-768.css">
     <link rel="stylesheet" media="screen and (max-width: 480px)" href="style480.css"> -->
+ 
 </head>
 <body>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header"><img src="./images/mobile/close-menu.png" onClick="hideMenuMobile()"/></div>
+        <div class="mobile-nav">
+            <ul class="mobile-menu-nav-items">
+                <li>
+                    <a href="#projects" onClick="hideMenuMobile()">Work</a>
+                </li>
+                <li>
+                    <a href="#about-me" onClick="hideMenuMobile()">About Me</a>
+                </li>
+                <li>
+                    <a href="contact.html" onClick="hideMenuMobile()">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <header>
         <div class="wrapper">
             <nav>
-                <div class="logo"><a href="index.html">anastasia.design</a></div>
+                <div class="logo"><a href="index.html">nastasya.space</a></div>
                 <ul class="nav-items-web">
                     <li>
                         <a href="#projects">Work</a>
@@ -34,7 +51,7 @@
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
-                <img src = "./images/mobile/menu.png" class="nav-items-mobile" />
+                <img src = "./images/mobile/menu.png" class="nav-items-mobile" onClick="showMenuMobile()"/>
             </nav>
             <!-- End of navigation menu -->
 
@@ -108,7 +125,7 @@
                 </div>
                 -->
                 <div class="project-card">
-                    <a href="">
+                    <a href="./projects/lpp.html">
                         <div class="img-hover-zoom">
                            
                             <img src="./images/firstpage/projects/Lpp.png" class="project-card-img-web" alt="" />
@@ -128,7 +145,7 @@
 
             <div class="right">
                 <div class="project-card">
-                    <a href="">
+                    <a href="./projects/brainster.html">
                         <div class="img-hover-zoom">
                             <img src="./images/firstpage/projects/BrainsterTalent.png" class="project-card-img-web" alt="" />
                             <img src="./images/firstpage/projects/BrainsterTalent-Mobile.png" class="project-card-img-mobile" alt="" />
@@ -161,7 +178,7 @@
                 </div>
                 -->
                 <div class="project-card">
-                    <a href="">
+                    <a href="./projects/bak.html">
                         <div class="img-hover-zoom">
                             <img src="./images/firstpage/projects/Bak.png" class="project-card-img-web" alt="" />
                             <img src="./images/firstpage/projects/Bak-mobile.png" class="project-card-img-mobile" alt="" />
@@ -212,7 +229,20 @@
             <div class="left"><span>@ all rights reserved</span><br><span>2023 January</span></div>
             <div class="right"><img src="./images/firstpage/footer/footer-top-mobile.png" class="go-top" onclick="window.scrollTo(0, 0);"/></div>
         </div>
-        
+        <ul>
+            <li>
+                <a href="./cv/CV1.pdf" class="ftr-resume">Resume</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/achuguncalieva/" class="ftr-linked-in">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/anastaschugunc" class="ftr-behance">Behance</a>
+            </li>
+            <li>
+                <a href="contact.html" class="ftr-contact">Contact</a>
+            </li>
+        </ul>      
     </footer>
 
     <footer class="footer-web">
@@ -240,16 +270,16 @@
                     <ul>
                         <li><img src="./images/firstpage/footer/location_icon.png"><span>1000 Ljubljana, Slovenia</span></li>
                         <li><img src="./images/firstpage/footer/phone_icon.png"><span>+386 70 241 984</span></li>
-                        <li><img src="./images/firstpage/footer/mail_icon.png"><span>achuguncalieva@gmail.com</span></li>
+                        <li><img src="./images/firstpage/footer/mail_icon.png"><span>nastasya.space@hotmail.com</span></li>
                     </ul>
                 </div>
                 <div class="find-me">
                     <h3>Find me on</h3>
                     <div>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/achuguncalieva/">
                             <img src="./images/firstpage/footer/linked-in.png">
                         </a>
-                        <a href="#">
+                        <a href="https://www.behance.net/anastaschugunc">
                             <img src="./images/firstpage/footer/behance.png">
                         </a>
                     </div>
@@ -262,6 +292,16 @@
     <script src="https://storage.borg.cloud/67@master/scripts/vendor/postprocessing.min.js?version=1609213054909"></script> 
     <script src="orbScript.js"></script>
     <script src="main.js"></script>
-    
+
+    <script>
+        function showMenuMobile(){
+        console.log("dasd");
+        document.getElementById("mobile-menu").style.display = "block";
+        }
+        function hideMenuMobile(){
+        document.getElementById("mobile-menu").style.display = "none";
+        }
+
+    </script>
 </body>
 </html>

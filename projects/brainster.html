@@ -4,34 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Brainster</title>
 
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header"><img src="../images/mobile/close-menu.png" onClick="hideMenuMobile()"/></div>
+        <div class="mobile-nav">
+            <ul class="mobile-menu-nav-items">
+                <li>
+                    <a href="../index.html#projects" onClick="hideMenuMobile()">Work</a>
+                </li>
+                <li>
+                    <a href="../index.html#about-me" onClick="hideMenuMobile()">About Me</a>
+                </li>
+                <li>
+                    <a href="../contact.html" onClick="hideMenuMobile()">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <header>
         <div class="wrapper">
             <nav>
-                <div class="logo"><a href="../index.html">anastasia.design</a></div>
-                <ul>
+                <div class="logo"><a href="../index.html">nastasya.space</a></div>
+                <ul class="nav-items-web">
                     <li>
-                        <a href="#">Work</a>
+                        <a href="../index.html#projects">Work</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="../index.html#about-me">About Me</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="../contact.html">Contact</a>
                     </li>
                 </ul>
+                <img src = "../images/mobile/menu.png" class="nav-items-mobile" onClick="showMenuMobile()"/>
             </nav>
             <!-- End of navigation menu -->
-
+            <!--
             <div class="hero-section-project">
+                <img src="../images/project-page/Sugarwish/herosection-monitor.png">
                 <div class="center">
-                    <img src="../images/project-page/Sugarwish/herosection-monitor.png">
+                    
                 </div>
-            </div>         
+            </div>    -->     
         </div>
     </header>
     
@@ -42,34 +60,38 @@
         <section class="project-section">
             <div class="first">
                 <div class="left">
-                    <h1>Sugarwish</h1>
-                    <h2>Responsive web and app redesign</h2>
-                    <p>A Sugarwish is essentially a gift that you give to another
-                        person. The main point of difference with traditional gifts is
-                        that the sender chooses the size of the gift, while the
-                        recipient chooses the specific contents of the gift. For example, if the sender chooses a Large Candy gift, upon
-                        receiving an eCard (notification of the gift) the recipient
-                        will choose the eight Candy flavors that are included in the gift. For the past couple of years, the company has been growing exponentially, and with that the product offering as well.
+                    <h1>Brainster Talent Market</h1>
+                    <h2>Web redesign</h2>
+                    <p>The idea behind Talent Market is to help Brainster’s students get recognized and hired easily based on their hard work. It is a project in the making where students can share their gained knowledge during their studies with their portfolios and resumes.
                     </p>
                     <p>
-                        The company is based in Denver, Colorado. With Sugarwish, the gift buyer can send an e-gift card (“eCard”) digitally with no mailing address required. The gift recipient receives the eCard and is invited to go to the Sugarwish website to pick their favorite treats or beverages. Those picks are shipped directly to the recipient. This structure leads to the recipient getting a gift with their favorite items, so the buyer knows that every gift will be personalized and enjoyed by the recipient. Sugarwish began as a Candy gift only, but has transformed to support 4 product lines with 16 product offerings.
+                        This page is a personalized URL, which the client sends after the company in question sends them a request for what they expect from a candidate. The clients additionally want to send another URL, once every three to six months with exceptional students called - The Super Talent Market, with all the students who showed the best results during the academy.
+                    </p>
+                    <p>
+                        With this website, companies can find and contact young people eager to work. This is like a similar version of Fiverr or 99Design where you can find all the skills, projects, resumes, and scores of the students.
+                    </p>
+                    <p>
+                        The primary user persona for this project would be the HR representatives for their related companies.
                     </p>
                 </div>
                 <div class="right">
-                    <img src="../images/project-page/Sugarwish/mobile.png" alt="">
+                    <img src="../images/project-page/Brainster/first.png" alt="">
                 </div>
                                 
             </div>
             
             <div class="second">   
                 <div class="left">
-                    <img src="../images/project-page/Sugarwish/section2picture.png" alt="">
+                    <img src="../images/project-page/Brainster/second.png" alt="">
                 </div>  
                 <div class="right">
                     <div class="content">
                         <h1>The working process and actions taken</h1>
-                        <p>As a team of five, we started asking ourselves “How can we make this even better, even simpler, and easier”. A few ideas were thrown to the wall, but without anything to back them up, none could simply stick. We knew it was time for research. We started by simply seeing people's thoughts and opinions whether it be from social media, testimonials, surveys, or interviews. A lot of information was gathered, and most of it was positive which was great, but now we also knew which areas needed to be bolstered. To sum up the information we gathered and make it more relevant to the design thinking process we made: user personas, user journeys (in multiple possible scenarios), and user flow on the existing website.
-                                We also carefully analyzed some competitor websites. It was finally time to draft some wireframes. After a few sketches on paper, we soon moved on to more high-fidelity wireframes. As one draft turned into another we started having a more and more polished design, that although a step away from the original ideas, was a huge step in the right direction.
+                        <p>
+                            We first started with analyzing the existing page, preparing questions for the stakeholder interview, and making assumptions. Then we made a detailed competitive analysis which included pages like 99Design, Fiverr, and Upwork. Afterward, we determined the outdated features and started working on the wireframes. We needed to do one that is clean, easy to use, and lets the user quickly move from one candidate to another.
+                        </p>
+                        <p>
+                            I was working on the talents page where I presented the candidates on the first page in a card. By clicking on the card you were on the candidate’s page where on your right you could read more about them, and on your left, you could easily see or choose similar candidates.
                         </p>
                     </div>
                 </div>   
@@ -79,11 +101,9 @@
             <div class="third">
                 <div class="content">
                     <h1>My takeaway</h1>
-                    <p>Research is a must: - I couldn’t have designed a product users love without the help of the people who will use it. The reviews and testimonials that I read on the internet and answers that I got from the interviews helped me enormously with the design. I got to know that the picture of the product was not clear to them. So we solved this by putting more pictures of the same product and also adding more info about the product (ex. grams).
-                        Better organization leads to better results - as a team leader on this project it felt pretty relieving to have everything done in time. Using Jira I was constantly assigning tasks, keeping the team motivated, and keeping the work organized.
-                        
-                    </p>
-                    <p>You can check out the whole case study at the following link</p>
+                    <p>“Coming together is a beginning, staying together is progress, and working together is a success.”- Henry Ford</p>
+                    <p>I understand that only by collaborating with other teams who share the same goal for the project, can I grow more as a designer. It was clear that we all needed to learn how to speak one shared language.</p>
+                    <p>You can check the whole case study on the following <a href="https://www.behance.net/gallery/161706687/Target-the-best-candidates-Talent-Market-Web-Design">link</a>.</p>
                 </div>
             </div>
         </section>
@@ -94,12 +114,19 @@
     <div class="wrapper">
         <div class="projects-navigation">
             <div class="left">
-                    <div class="previous-icon"><a href="#"><</a></div>
-                    <div class="previous-project"><a href="#">Previous Project</a></div>            
+                <a href="./sugarwish.html">
+                    <div class="previous-icon"><img src="../images/project-page/arrow-previous.png" /></div>
+                    <div class="previous-project">Previous Project</div>    
+                </a>        
             </div>
             <div class="right">
-                    <div class="next-project"><a href="#">Next Project</a></div>
+                <!--
+                    <div class="next-project"><a href="./brainster.html">Next Project</a></div>
                     <div class="next-icon"><a href="#">></a></div>
+                    -->
+                    <a href="./lpp.html">
+                    <div class="next-project">Next Project</div>
+                    <div class="next-icon"><img src="../images/project-page/arrow_next.png" /></div>
                 </a>
             </div>
         </div>
@@ -107,32 +134,53 @@
 
      <!-- End of Projects navigation -->
 
-    <footer>
+     <footer class="footer-mobile">
+        <div class="footer-content">
+            <div class="left"><span>@ all rights reserved</span><br><span>2023 January</span></div>
+            <div class="right"><img src="../images/firstpage/footer/footer-top-mobile.png" class="go-top" onclick="window.scrollTo(0, 0);"/></div>
+        </div>
+        <ul>
+            <li>
+                <a href="./cv/CV1.pdf" class="ftr-resume">Resume</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/achuguncalieva/" class="ftr-linked-in">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/anastaschugunc" class="ftr-behance">Behance</a>
+            </li>
+            <li>
+                <a href="../contact.html" class="ftr-contact">Contact</a>
+            </li>
+        </ul>  
+    </footer>
+
+    <footer class="footer-web">
         <div class="wrapper footer-wrap">
             <div class="links-container">
                 <div class="links">
                     <h3>Quick links</h3>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="../index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">About me</a>
+                            <a href="../index.html#projects">Work</a>
                         </li>
                         <li>
-                            <a href="#">Work</a>
+                            <a href="../index.html#about-me">About Me</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="../contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
                 <div class="contacts"> 
                     <h3>Contact</h3>
                     <ul>
-                        <li><div><img src="../images/firstpage/footer/location_icon.png"></div><div><span>1000 Ljubljana, Slovenia</span></div></li>
+                        <li><img src="../images/firstpage/footer/location_icon.png"><span>1000 Ljubljana, Slovenia</span></li>
                         <li><img src="../images/firstpage/footer/phone_icon.png"><span>+386 70 241 984</span></li>
-                        <li><img src="../images/firstpage/footer/mail_icon.png"><span>achuguncalieva@gmail.com</span></li>
+                        <li><img src="../images/firstpage/footer/mail_icon.png"><span>nastasya.space@hotmail.com</span></li>
                     </ul>
                 </div>
                 <div class="find-me">
@@ -142,7 +190,7 @@
                             <img src="../images/firstpage/footer/linked-in.png">
                         </a>
                         <a href="#">
-                            <img src="../images/firstpage/footer/Behance.png">
+                            <img src="../images/firstpage/footer/behance.png">
                         </a>
                     </div>
                 </div>
@@ -150,7 +198,15 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
-    
+    <script>
+        function showMenuMobile(){
+        console.log("dasd");
+        document.getElementById("mobile-menu").style.display = "block";
+        }
+        function hideMenuMobile(){
+        document.getElementById("mobile-menu").style.display = "none";
+        }
+
+    </script>
 </body>
 </html>

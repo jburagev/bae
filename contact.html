@@ -5,15 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./jquery1.11.2.js"></script>
 
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+        
+        function sendEmail () {
+
+            if(document.getElementById('name').value != "" && document.getElementById("message").value != "" & document.getElementById('email').value !=""){
+
+                $.ajax({
+                    url:"sendEmail.php",    //the page containing php script
+                    type: "post",    //request type,
+                    data: {subject: "New message from ", name: document.getElementById('name').value, message: document.getElementById("message").value, email: document.getElementById('email').value},
+                    success:function(result){
+                        var modal = document.getElementById("myModal");
+                        window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                        }
+                        document.getElementById("modal-text").innerHTML = "Thank you for reaching, <br> you'll be hearing out from me soon.";
+                        document.getElementById("close-modal").onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        modal.style.display = "block";
+
+                        console.log("Success");
+                        
+                    },
+                    error:function(result){
+                        var modal = document.getElementById("myModal");
+                        window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                        }
+                        document.getElementById("modal-text").innerHTML = "Woops.. There was issue while sending you message. <br><br> Please try to contact me on:  <br> nastasya.space@hotmail.com";
+                        document.getElementById("close-modal").onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        modal.style.display = "block";
+
+                        console.log("Error");
+                    }
+                });
+            }else{
+                var modal = document.getElementById("myModal");
+                        window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                        }
+                        document.getElementById("modal-text").innerHTML = "Please fullfill all the fields in order to send the message. Thanks!";
+                        document.getElementById("close-modal").onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        modal.style.display = "block";
+
+            }
+        }
+    </script>
 </head>
 <body>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header"><img src="./images/mobile/close-menu.png" onClick="hideMenuMobile()"/></div>
+        <div class="mobile-nav">
+            <ul class="mobile-menu-nav-items">
+                <li>
+                    <a href="./index.html#projects" onClick="hideMenuMobile()">Work</a>
+                </li>
+                <li>
+                    <a href="./index.html#about-me" onClick="hideMenuMobile()">About Me</a>
+                </li>
+                <li>
+                    <a href="./contact.html" onClick="hideMenuMobile()">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <header>
         <div class="wrapper">
             <nav>
-                <div class="logo"><a href="./index.html">anastasia.design</a></div>
-                <ul>
+                <div class="logo"><a href="./index.html">nastasya.space</a></div>
+                <ul class="nav-items-web">
                     <li>
                         <a href="./index.html#projects">Work</a>
                     </li>
@@ -24,6 +104,7 @@
                         <a href="./contact.html">Contact</a>
                     </li>
                 </ul>
+                <img src = "./images/mobile/menu.png" class="nav-items-mobile" onClick="showMenuMobile()" />
             </nav>
             <!-- End of navigation menu -->        
         </div>
@@ -33,29 +114,60 @@
     <!-- End of the header section -->
 
     <div class="wrapper  contact-me-w">
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span id="close-modal" class="close">&times;</span>
+              <p id="modal-text">Thank you for reaching, <br> you'll be hearing out from me soon.</p>
+              <a href="./index.html" class="btn orange" >Go back to Home page</a>
+            </div>
+          
+          </div>
         <section class="contact-me">
             <div class="form">
                     <h1>Contact Form</h1>
                     <div class="control">
                         <label>Full Name</label><br>
-                        <input type="text" placeholder="ex. John Doe"/>
+                        <input type="text" placeholder="ex. John Doe" id="name"/>
                     </div>
                     <div class="control">
                         <label>Email address</label><br>
-                        <input type="text" placeholder="ex. myemail@myemail.com"/>
+                        <input type="text" placeholder="ex. myemail@myemail.com" id="email"/>
                     </div>
                     <div class="control">
                         <label>Your message</label><br>
-                        <textarea type="text" placeholder="Type your message here"></textarea>
+                        <textarea type="text" placeholder="Type your message here" id="message"></textarea>
                     </div>
-                    <a href="#" class="btn dark">Send</a>
+                    <a href="#" class="btn dark" onClick="sendEmail()">Send</a>
             </div>
         </section>
     </div>
 
     <!-- End of Contact me form section -->
 
-    <footer>
+    <footer class="footer-mobile">
+        <div class="footer-content">
+            <div class="left"><span>@ all rights reserved</span><br><span>2023 January</span></div>
+            <div class="right"><img src="./images/firstpage/footer/footer-top-mobile.png" class="go-top" onclick="window.scrollTo(0, 0);"/></div>
+        </div>
+        <ul>
+            <li>
+                <a href="./cv/CV1.pdf" class="ftr-resume">Resume</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/achuguncalieva/" class="ftr-linked-in">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/anastaschugunc" class="ftr-behance">Behance</a>
+            </li>
+            <li>
+                <a href="#" class="ftr-contact">Contact</a>
+            </li>
+        </ul>   
+    </footer>
+
+    <footer class="footer-web">
         <div class="wrapper footer-wrap">
             <div class="links-container">
                 <div class="links">
@@ -80,7 +192,7 @@
                     <ul>
                         <li><img src="./images/firstpage/footer/location_icon.png"><span>1000 Ljubljana, Slovenia</span></li>
                         <li><img src="./images/firstpage/footer/phone_icon.png"><span>+386 70 241 984</span></li>
-                        <li><img src="./images/firstpage/footer/mail_icon.png"><span>achuguncalieva@gmail.com</span></li>
+                        <li><img src="./images/firstpage/footer/mail_icon.png"><span>nastasya.space@hotmail.com</span></li>
                     </ul>
                 </div>
                 <div class="find-me">
@@ -90,7 +202,7 @@
                             <img src="images/firstpage/footer/linked-in.png">
                         </a>
                         <a href="#">
-                            <img src="images/firstpage/footer/Behance.png">
+                            <img src="images/firstpage/footer/behance.png">
                         </a>
                     </div>
                 </div>
@@ -98,7 +210,16 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script>
+        function showMenuMobile(){
+       
+        document.getElementById("mobile-menu").style.display = "block";
+        }
+        function hideMenuMobile(){
+        document.getElementById("mobile-menu").style.display = "none";
+        }
+
+    </script>
     
 </body>
 </html>

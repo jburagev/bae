@@ -4,16 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sugarwish</title>
 
-    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header"><img src="../images/mobile/close-menu.png" onClick="hideMenuMobile()"/></div>
+        <div class="mobile-nav">
+            <ul class="mobile-menu-nav-items">
+                <li>
+                    <a href="../index.html#projects" onClick="hideMenuMobile()">Work</a>
+                </li>
+                <li>
+                    <a href="../index.html#about-me" onClick="hideMenuMobile()">About Me</a>
+                </li>
+                <li>
+                    <a href="../contact.html" onClick="hideMenuMobile()">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <header>
         <div class="wrapper">
             <nav>
-                <div class="logo"><a href="../index.html">anastasia.design</a></div>
-                <ul>
+                <div class="logo"><a href="../index.html">nastasya.space</a></div>
+                <ul class="nav-items-web">
                     <li>
                         <a href="../index.html#projects">Work</a>
                     </li>
@@ -24,6 +40,7 @@
                         <a href="../contact.html">Contact</a>
                     </li>
                 </ul>
+                <img src = "../images/mobile/menu.png" class="nav-items-mobile" onClick="showMenuMobile()"/>
             </nav>
             <!-- End of navigation menu -->
             <!--
@@ -46,14 +63,16 @@
                     <h1>Sugarwish</h1>
                     <h2>Responsive web and app redesign</h2>
                     <p>A Sugarwish is essentially a gift that you give to another
-                        person. The main point of difference with traditional gifts is
-                        that the sender chooses the size of the gift, while the
+                        person. The main point of difference with traditional gifts is that the sender chooses the size of the gift, while the
                         recipient chooses the specific contents of the gift. For example, if the sender chooses a Large Candy gift, upon
                         receiving an eCard (notification of the gift) the recipient
                         will choose the eight Candy flavors that are included in the gift. For the past couple of years, the company has been growing exponentially, and with that the product offering as well.
                     </p>
                     <p>
-                        The company is based in Denver, Colorado. With Sugarwish, the gift buyer can send an e-gift card (“eCard”) digitally with no mailing address required. The gift recipient receives the eCard and is invited to go to the Sugarwish website to pick their favorite treats or beverages. Those picks are shipped directly to the recipient. This structure leads to the recipient getting a gift with their favorite items, so the buyer knows that every gift will be personalized and enjoyed by the recipient. Sugarwish began as a Candy gift only, but has transformed to support 4 product lines with 16 product offerings.
+                        A great user flow is crucial especially when the platform that we are working on is e-commerce based. The users must get all the information that they need to know before doing a purchase or an action. If they don't know all the needed info they will get frustrated when they find them out on their own during the process.
+                    </p>
+                    <p>
+                        We had the task to bring all the knowledge to the customers without making them feel attacked or overwhelmed by it.
                     </p>
                 </div>
                 <div class="right">
@@ -69,8 +88,12 @@
                 <div class="right">
                     <div class="content">
                         <h1>The working process and actions taken</h1>
-                        <p>As a team of five, we started asking ourselves “How can we make this even better, even simpler, and easier”. A few ideas were thrown to the wall, but without anything to back them up, none could simply stick. We knew it was time for research. We started by simply seeing people's thoughts and opinions whether it be from social media, testimonials, surveys, or interviews. A lot of information was gathered, and most of it was positive which was great, but now we also knew which areas needed to be bolstered. To sum up the information we gathered and make it more relevant to the design thinking process we made: user personas, user journeys (in multiple possible scenarios), and user flow on the existing website.
-                                We also carefully analyzed some competitor websites. It was finally time to draft some wireframes. After a few sketches on paper, we soon moved on to more high-fidelity wireframes. As one draft turned into another we started having a more and more polished design, that although a step away from the original ideas, was a huge step in the right direction.
+                        <p>
+                            As a team of five, we started asking ourselves “How can we make this even better, even simpler, and easier”. A few ideas were thrown to the wall, but without anything to back them up, none could simply stick. We knew it was time for research. We started by simply seeing people's thoughts and opinions whether it be from social media, testimonials, surveys, or interviews. A lot of information was gathered, and most of it was positive which was great, but now we also knew which areas needed to be bolstered. To sum up the information we gathered and make it more relevant to the design thinking process we made: user personas, user journeys (in multiple possible scenarios), and user flow on the existing website.
+                            We also carefully analyzed some competitor websites. It was finally time to draft some wireframes. 
+                            After a few sketches on paper, we soon moved on to more high-fidelity wireframes. 
+                            As one draft turned into another we started having a more and more polished design, that although a step away from the original ideas, was a huge step in the right direction.
+
                         </p>
                     </div>
                 </div>   
@@ -81,10 +104,9 @@
                 <div class="content">
                     <h1>My takeaway</h1>
                     <p>Research is a must: - I couldn’t have designed a product users love without the help of the people who will use it. The reviews and testimonials that I read on the internet and answers that I got from the interviews helped me enormously with the design. I got to know that the picture of the product was not clear to them. So we solved this by putting more pictures of the same product and also adding more info about the product (ex. grams).
-                        Better organization leads to better results - as a team leader on this project it felt pretty relieving to have everything done in time. Using Jira I was constantly assigning tasks, keeping the team motivated, and keeping the work organized.
-                        
+                        Better organization leads to better results - as a team leader on this project it felt pretty relieving to have everything done in time. Using Jira I was constantly assigning tasks, keeping the team motivated, and keeping the work organized.                        
                     </p>
-                    <p>You can check out the whole case study at the following link</p>
+                    <p>You can check out the whole case study at the following <a href="https://www.behance.net/gallery/153765845/Sugarwish-personalized-gifts">link</a>.</p>
                 </div>
             </div>
         </section>
@@ -95,8 +117,7 @@
     <div class="wrapper">
         <div class="projects-navigation">
             <div class="left">
-                    <div class="previous-icon"><a href="#"><</a></div>
-                    <div class="previous-project"><a href="#">Previous Project</a></div>            
+                    
             </div>
             <div class="right">
                 <!--
@@ -113,7 +134,28 @@
 
      <!-- End of Projects navigation -->
 
-    <footer>
+     <footer class="footer-mobile">
+        <div class="footer-content">
+            <div class="left"><span>@ all rights reserved</span><br><span>2023 January</span></div>
+            <div class="right"><img src="../images/firstpage/footer/footer-top-mobile.png" class="go-top" onclick="window.scrollTo(0, 0);"/></div>
+        </div>
+        <ul>
+            <li>
+                <a href="./cv/CV1.pdf" class="ftr-resume">Resume</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/achuguncalieva/" class="ftr-linked-in">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/anastaschugunc" class="ftr-behance">Behance</a>
+            </li>
+            <li>
+                <a href="../contact.html" class="ftr-contact">Contact</a>
+            </li>
+        </ul>  
+    </footer>
+
+    <footer class="footer-web">
         <div class="wrapper footer-wrap">
             <div class="links-container">
                 <div class="links">
@@ -138,7 +180,7 @@
                     <ul>
                         <li><img src="../images/firstpage/footer/location_icon.png"><span>1000 Ljubljana, Slovenia</span></li>
                         <li><img src="../images/firstpage/footer/phone_icon.png"><span>+386 70 241 984</span></li>
-                        <li><img src="../images/firstpage/footer/mail_icon.png"><span>achuguncalieva@gmail.com</span></li>
+                        <li><img src="../images/firstpage/footer/mail_icon.png"><span>nastasya.space@hotmail.com</span></li>
                     </ul>
                 </div>
                 <div class="find-me">
@@ -156,6 +198,15 @@
         </div>
     </footer>
 
+    <script>
+        function showMenuMobile(){
+        console.log("dasd");
+        document.getElementById("mobile-menu").style.display = "block";
+        }
+        function hideMenuMobile(){
+        document.getElementById("mobile-menu").style.display = "none";
+        }
 
+    </script>
 </body>
 </html>
